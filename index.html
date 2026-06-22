@@ -119,14 +119,20 @@
           আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
           অন্য একটি Level এ
         </p>
-        <fieldset class="fieldset mt-9 gap-5 flex flex-col items-center md:items-start">
+        <fieldset
+          class="fieldset mt-9 gap-5 flex flex-col items-center md:items-start"
+        >
           <input type="text" class="input" placeholder="Enter Your Name" />
           <input
             type="password"
             class="input"
             placeholder="Enter Your Password"
           />
-          <a href="" class="btn btn-primary text-white border-none px-8 normal-case w-fit">Get Started </a>
+          <a
+            href=""
+            class="btn btn-primary text-white border-none px-8 normal-case w-fit"
+            >Get Started
+          </a>
         </fieldset>
       </div>
       <div class="image flex-1">
@@ -136,20 +142,43 @@
 
     <section>
       <h2 class="text-4xl font-bold mb-8 text-center">
-          <span class="text-sky-400">Let's</span> Learn Vocabularies
-        </h2>
+        <span class="text-sky-400">Let's</span> Learn Vocabularies
+      </h2>
 
-        <div id="level-container" class="flex gap-5 flex-wrap justify-center">
-
-        </div>
+      <div
+        id="level-container"
+        class="flex gap-5 flex-wrap justify-center"
+      ></div>
     </section>
 
-    <section id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-3 gap-5">
-      <div class="text-center bg-sky-100 col-span-full rounded-xl py-10 space-y-6 font-bangla">
-        <p class="text-xl font-medium text-gray-400">আপনি এখনো কোন Lesson Select করেন নি! </p>
+    <section
+      id="word-container"
+      class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-3 gap-5"
+    >
+      <div
+        class="text-center bg-sky-100 col-span-full rounded-xl py-10 space-y-6 font-bangla"
+      >
+        <p class="text-xl font-medium text-gray-400">
+          আপনি এখনো কোন Lesson Select করেন নি!
+        </p>
         <h2 class="font-bold text-4xl">একটি Lesson Select করুন।</h2>
       </div>
     </section>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <h3 class="text-lg font-bold">Hello!</h3>
+        <p class="py-4">Press ESC key or click the button below to close</p>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
 
     <script src="scripts/script.js"></script>
   </body>
